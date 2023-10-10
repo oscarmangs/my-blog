@@ -9,3 +9,9 @@ isFeatured: true
 # This is a title
 
 this is some regular text with a [link](https://google.com)
+
+## File-based Routing
+
+![Create routes via your file + folder structure](next_routing.jpeg)
+
+... More content ...
