@@ -10,12 +10,16 @@ function ContactForm() {
   const [requestError, setRequestError] = useState(""); 
 
   useEffect(() => {
-    if(requestStatus === 'pending' || requestStatus === 'error'){
-      const timer = setTimeout(()=> {
-        setRequestStatus(null); 
-        setRequestError(null); 
-      }, 3000); 
-      return () => clearTimeout(timer); 
+    if (
+      requestStatus === "pending" ||
+      requestStatus === "error" ||
+      requestStatus === "success"
+    ) {
+      const timer = setTimeout(() => {
+        setRequestStatus(null);
+        setRequestError(null);
+      }, 3000);
+      return () => clearTimeout(timer);
     }
   }, [requestStatus]); 
 
